@@ -4,160 +4,161 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foreground="?android:attr/selectableItemBackground"
-    android:background="@drawable/fondo1"
+    android:background="@drawable/fondo2"
     tools:context="com.example.kcruz.aboutme.MainActivity"
     >
-
-
-
-
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:background="#69aba1a1">
+       android:gravity="center_vertical"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="228dp"
             android:layout_gravity="center"
             android:orientation="vertical">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profile_image"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/cara"
                 android:padding="16dp"
-                />
+                android:src="@drawable/cara" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Karla Cruz"
                 android:textAlignment="center"
-                android:textSize="24sp"
-                android:textColor="#d11d1d"/>
+                android:textColor="#d11d1d"
+                android:textSize="24sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
                 android:text="Ingeniería Informática"
                 android:textAlignment="center"
-                android:textSize="16sp"
-                android:paddingBottom="16dp"
-                android:textColor="#500a0a"/>
+                android:textColor="#500a0a"
+                android:textSize="16sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="#45efaba8"
             android:orientation="horizontal"
-            android:background="#45efaba8">
+            >
 
             <ImageView
                 android:id="@+id/email_icon"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="60dp"
+                android:layout_weight="1"
                 android:padding="6dp"
-                android:layout_gravity="left"
                 android:src="@drawable/email1" />
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="3"
                 android:layout_height="55dp"
+                android:layout_weight="3"
                 android:paddingTop="16dp"
                 android:text="00010216@uca.edu.sv"
-                android:textColor="#393838"
-                android:textSize="16sp"/>
+                android:textColor="#fff"
+                android:textSize="16sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#45f4948f">
+            android:background="#45f4948f"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/twitter_icon"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="60dp"
+                android:layout_weight="1"
                 android:padding="6dp"
                 android:src="@drawable/twitter" />
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="3"
                 android:layout_height="55dp"
+                android:layout_weight="3"
                 android:paddingTop="16dp"
-                android:textColor="#393838"
                 android:text="karlaCk_"
-                android:textSize="16sp"/>
+                android:textColor="#fff"
+                android:textSize="16sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#45f17f74">
+            android:background="#45f17f74"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/phone_icon"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="60dp"
+                android:layout_weight="1"
                 android:padding="6dp"
                 android:src="@drawable/phone3" />
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="3"
                 android:layout_height="60dp"
+                android:layout_weight="3"
                 android:paddingTop="16dp"
                 android:text="7754-5082"
-                android:textColor="#393838"
-                android:textSize="16sp"/>
+                android:textColor="#fff"
+                android:textSize="16sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#45f16060">
+            android:background="#45f16060"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/github_icon"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="60dp"
+                android:layout_weight="1"
                 android:padding="6dp"
                 android:src="@drawable/git" />
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="3"
                 android:layout_height="60dp"
+                android:layout_weight="3"
                 android:paddingTop="16dp"
-                android:textColor="#393838"
                 android:text="00010216"
-                android:textSize="16sp"/>
+                android:textColor="#fff"
+                android:textSize="16sp" />
         </LinearLayout>
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Powered By: Karla Cruz"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:paddingTop="16dp"
-            android:paddingBottom="8dp"
-            android:textColor="#c9e7cfcf"/>
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="16dp"
+                android:text="Powered By: Karla Cruz"
+                android:textAlignment="center"
+                android:textColor="#5efffefe"
+                android:textSize="16sp" />
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
