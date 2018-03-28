@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foreground="?android:attr/selectableItemBackground"
-    android:background="@drawable/fondo2"
+    android:background="@drawable/dark1"
     tools:context="com.example.kcruz.aboutme.MainActivity"
     >
 
@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
        android:gravity="center_vertical"
+        android:background="#1e8c8c8c"
         android:orientation="vertical">
 
         <LinearLayout
@@ -26,8 +27,6 @@
                 android:id="@+id/profile_image"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
                 android:padding="16dp"
                 android:src="@drawable/cara" />
 
@@ -36,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:text="Karla Cruz"
                 android:textAlignment="center"
-                android:textColor="#d11d1d"
+                android:textColor="#f17806"
                 android:textSize="24sp" />
 
             <TextView
@@ -45,7 +44,7 @@
                 android:paddingBottom="16dp"
                 android:text="Ingeniería Informática"
                 android:textAlignment="center"
-                android:textColor="#500a0a"
+                android:textColor="#d6cbcb"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -54,8 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#45efaba8"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/email_icon"
@@ -63,7 +61,7 @@
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:padding="6dp"
-                android:src="@drawable/email1" />
+                android:src="@drawable/email2" />
 
             <TextView
                 android:layout_width="0dp"
@@ -78,7 +76,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#45f4948f"
+            android:background="#45f17f74 "
             android:orientation="horizontal">
 
             <ImageView
@@ -87,7 +85,7 @@
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:padding="6dp"
-                android:src="@drawable/twitter" />
+                android:src="@drawable/twitter_social_icon_circle_white" />
 
             <TextView
                 android:layout_width="0dp"
@@ -102,7 +100,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#45f17f74"
+            android:background="#45f4948f"
             android:orientation="horizontal">
 
             <ImageView
@@ -126,7 +124,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#45f16060"
+            android:background="#45efaba8"
             android:orientation="horizontal">
 
             <ImageView
@@ -135,7 +133,7 @@
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:padding="6dp"
-                android:src="@drawable/git" />
+                android:src="@drawable/github_mark_light_120px_plus" />
 
             <TextView
                 android:layout_width="0dp"
@@ -157,7 +155,7 @@
                 android:paddingTop="16dp"
                 android:text="Powered By: Karla Cruz"
                 android:textAlignment="center"
-                android:textColor="#90fffefe"
+                android:textColor="#5cfffefe"
                 android:textSize="16sp" />
         </LinearLayout>
 
