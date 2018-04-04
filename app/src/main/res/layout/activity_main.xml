@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foreground="?android:attr/selectableItemBackground"
@@ -52,97 +53,126 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#45efaba8"
-            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/email_icon"
+            android:orientation="horizontal"
+            android:layout_margin="12dp">
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
                 android:layout_weight="1"
-                android:padding="6dp"
-                android:src="@drawable/email2" />
+                android:background="#45fdb7b3"
+                android:layout_marginRight="6dp">
 
-            <TextView
+                <ImageView
+                    android:id="@+id/email_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:src="@drawable/email2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="6dp"
+                    android:text="00010216@uca.edu.sv"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="3"
-                android:paddingTop="16dp"
-                android:text="00010216@uca.edu.sv"
-                android:textColor="#fff"
-                android:textSize="16sp" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="6dp"
+                android:background="#45fdb7b3">
+
+                <ImageView
+                    android:id="@+id/twitter_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    app:srcCompat="@drawable/ic_twitter"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="6dp"
+                    android:text=" @karlaCk_"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#45f17f74 "
-            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/twitter_icon"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp">
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
                 android:layout_weight="1"
-                android:padding="6dp"
-                android:src="@drawable/twitter_social_icon_circle_white" />
+                android:background="#45fdb7b3"
+                android:layout_marginRight="6dp">
 
-            <TextView
+                <ImageView
+                    android:id="@+id/phone_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:paddingTop="6dp"
+                    android:src="@drawable/phone3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="6dp"
+                    android:text="7754-6027"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="3"
-                android:paddingTop="16dp"
-                android:text=" @karlaCk_"
-                android:textColor="#fff"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#45f4948f"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/phone_icon"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_weight="1"
-                android:padding="6dp"
-                android:src="@drawable/phone3" />
+                android:gravity="center"
+                android:layout_marginLeft="6dp"
+                android:background="#45fdb7b3">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="3"
-                android:paddingTop="16dp"
-                android:text="7754-5082"
-                android:textColor="#fff"
-                android:textSize="16sp" />
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/github_icon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:src="@drawable/github_mark_light_120px_plus" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#45efaba8"
-            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:padding="6dp"
+                    android:text=" @00010216"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+            </LinearLayout>
 
-            <ImageView
-                android:id="@+id/github_icon"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:padding="6dp"
-                android:src="@drawable/github_mark_light_120px_plus" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="3"
-                android:paddingTop="16dp"
-                android:text=" @00010216 "
-                android:textColor="#fff"
-                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
