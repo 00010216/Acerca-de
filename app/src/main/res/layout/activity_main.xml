@@ -6,20 +6,30 @@
     android:layout_height="match_parent"
     android:foreground="?android:attr/selectableItemBackground"
     android:background="@drawable/dark1"
+    android:orientation="vertical"
+    android:alpha="0.99"
     tools:context="com.example.kcruz.aboutme.MainActivity"
     >
 
+    <ImageView
+        android:id="@+id/img_share"
+        android:layout_gravity="right"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/share1"
+        android:layout_marginRight="16dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-       android:gravity="center_vertical"
-        android:background="#1e8c8c8c"
+        android:layout_gravity="center_vertical"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="228dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:layout_gravity="center"
             android:orientation="vertical">
 
@@ -27,158 +37,188 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/profile_image"
                 android:layout_width="match_parent"
-                android:layout_height="152dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:padding="16dp"
                 android:src="@drawable/cara" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
             <TextView
+                android:id="@+id/txt_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:text="Karla Cruz"
                 android:textAlignment="center"
                 android:textColor="#f17806"
                 android:textSize="24sp" />
 
             <TextView
+                android:id="@+id/txt_major"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:paddingBottom="16dp"
                 android:text="Ingeniería Informática"
                 android:textAlignment="center"
                 android:textColor="#d6cbcb"
                 android:textSize="16sp" />
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:paddingBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="113dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="#45fdb7b3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/email_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:paddingTop="6dp"
+                        android:src="@drawable/email2" />
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="6dp"
+                        android:textAlignment="center"
+                        android:text="00010216@uca.edu.sv"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="113dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:background="#45fdb7b3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/twitter_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_twitter" />
+
+                    <TextView
+                        android:id="@+id/txt_twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="6dp"
+                        android:text=" @karlaCk_"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingTop="4dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="#45fdb7b3"
+                    android:layout_marginRight="6dp">
+
+                    <ImageView
+                        android:id="@+id/phone_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:paddingTop="6dp"
+                        android:src="@drawable/phone3" />
+
+                    <TextView
+                        android:id="@+id/txt_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="6dp"
+                        android:text="7754-6027"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:background="#45fdb7b3">
+
+                    <ImageView
+                        android:id="@+id/github_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:padding="6dp"
+                        android:src="@drawable/github_mark_light_120px_plus" />
+
+                    <TextView
+                        android:id="@+id/txt_git"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="6dp"
+                        android:text=" @00010216"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:orientation="horizontal"
-            android:layout_margin="12dp">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:background="#45fdb7b3"
-                android:layout_marginRight="6dp">
-
-                <ImageView
-                    android:id="@+id/email_icon"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:paddingTop="6dp"
-                    android:src="@drawable/email2" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:padding="6dp"
-                    android:text="00010216@uca.edu.sv"
-                    android:textColor="#fff"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_marginLeft="6dp"
-                android:background="#45fdb7b3">
-
-                <ImageView
-                    android:id="@+id/twitter_icon"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:padding="6dp"
-                    app:srcCompat="@drawable/ic_twitter"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:padding="6dp"
-                    android:text=" @karlaCk_"
-                    android:textColor="#fff"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:orientation="horizontal"
-            android:layout_marginLeft="12dp"
-            android:layout_marginRight="12dp">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:background="#45fdb7b3"
-                android:layout_marginRight="6dp">
-
-                <ImageView
-                    android:id="@+id/phone_icon"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:paddingTop="6dp"
-                    android:src="@drawable/phone3" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:padding="6dp"
-                    android:text="7754-6027"
-                    android:textColor="#fff"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:layout_marginLeft="6dp"
-                android:background="#45fdb7b3">
-
-                <ImageView
-                    android:id="@+id/github_icon"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:padding="6dp"
-                    android:src="@drawable/github_mark_light_120px_plus" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:padding="6dp"
-                    android:text=" @00010216"
-                    android:textColor="#fff"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_gravity=""
+            android:orientation="vertical">
             <TextView
+                android:id="@+id/txt_by"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="8dp"
@@ -187,6 +227,7 @@
                 android:textAlignment="center"
                 android:textColor="#5cfffefe"
                 android:textSize="16sp" />
+
         </LinearLayout>
 
     </LinearLayout>
