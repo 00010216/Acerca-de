@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
      * */
     private String createImage(int resource){
         Bitmap bitmap= BitmapFactory.decodeResource(getResources(),resource);
-        String path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)+"/profile.jpg";
+        String path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)+"/cara.JPG";
         OutputStream out = null;
         File file=new File(path);
         try {
@@ -92,21 +92,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-     * Comparte la imagen con las aplicaciones disponibles
+     * Intent para compartir la informacion
      * */
     public  void sharePicture(){
         //Se obtiene la URI de imagen con formato content:/, apto para compartir
         //con otras apps sin problemas de permisos
-        imageUri = FileProvider.getUriForFile(myContext, "com.gamma.fileprovider", new File(imgPath));
+        imageUri = FileProvider.getUriForFile(myContext, "com.example.kcruz.fileprovider", new File(imgPath));
 
-        //Se comparte la imagen como normalmente
-        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        Intent shareIntent = new Intent(Intent.ACTION_SEND_MULTIPLE);
         shareIntent.putExtra(Intent.EXTRA_STREAM, imageUri);
         shareIntent.putExtra(Intent.EXTRA_TEXT, shareProfiletxt);
+        shareIntent.setType("image/*");
 
         shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION); //permiso de lectura
 
-        shareIntent.setType("image/*");
         Intent chooser = Intent.createChooser(shareIntent, "Share");
 
         if (shareIntent.resolveActivity(getPackageManager()) != null){
